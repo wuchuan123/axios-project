@@ -1,9 +1,25 @@
 {
   "compilerOptions": {
-    "module": "node16",
-    "lib": ["dom", "es2015"],
+    "outDir": "./dist",
+    "lib": [
+      "dom",
+      "es2015"
+    ],
+    "target": "ESNext",
+    "module": "ES6",
+    "allowJs": true,
     "types": [],
     "strict": true,
-    "noEmit": true
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "inlineSourceMap": true,
+    "moduleResolution": "Node",
+    "typeRoots": [
+      "node_modules/@types",
+      "*/types"
+    ],
+    "baseUrl": "./",
+    "suppressExcessPropertyErrors": true,
+    "allowSyntheticDefaultImports": true
   }
 }
